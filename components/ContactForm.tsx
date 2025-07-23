@@ -12,8 +12,10 @@ export function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Aquí iría la lógica para enviar el formulario
-    console.log('Formulario enviado:', formData);
+    const subject = `Mensaje de ${formData.name}`;
+    const body = `Nombre: ${formData.name}%0D%0AEmail: ${formData.email}%0D%0A%0D%0A${formData.message}`;
+    window.location.href = `mailto:Munoznorma752@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+    
   };
 
   return (

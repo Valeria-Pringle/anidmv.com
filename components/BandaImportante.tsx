@@ -6,25 +6,33 @@ import { FaInstagram } from 'react-icons/fa';
 
 const banda = [
   {
+    id: 2,
+    name: 'Manager',
+    handle: '@purple.xfi',
+    imageUrl: '/images/xfi.jpg', // Placeholder image
+    profileUrl: 'https://instagram.com/purple.xfi',
+  },
+  {
     id: 1,
     name: 'GoodFellas',
     handle: '@goodfellas_oficial_',
     imageUrl: '/images/productor.png', 
     profileUrl: 'https://www.instagram.com/goodfellas_oficial_/',
   },
-  {
-    id: 2,
-    name: 'DJ Ritmo',
-    handle: '@dj_ritmo',
-    imageUrl: '/images/banda/dj.jpg', // Placeholder image
-    profileUrl: 'https://instagram.com/dj_ritmo',
-  },
+
   {
     id: 3,
-    name: 'Visuales Creativos',
-    handle: '@visuales_creativos',
-    imageUrl: '/images/banda/visuales.jpg', // Placeholder image
-    profileUrl: 'https://instagram.com/visuales_creativos',
+    name: 'Camarógrafo',
+    handle: '@padrinoli.mp4',
+    imageUrl: '/images/camarografo.png', // Placeholder image
+    profileUrl: 'https://instagram.com/padrinoli.mp4',
+  },
+  {
+    id: 4,
+    name: 'BLACK GANG',
+    handle: '@lablackgang',
+    imageUrl: '/images/blackgang.png', // Placeholder image
+    profileUrl: 'https://instagram.com/lablackgang',
   },
 ];
 
@@ -46,7 +54,7 @@ export function BandaImportante() {
           >
             Banda Importante
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {banda.map((miembro) => (
               <motion.a
                 key={miembro.id}
