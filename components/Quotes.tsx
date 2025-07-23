@@ -5,19 +5,15 @@ import { useState } from 'react';
 
 const quotes = [
   {
-    text: "La música es mi forma de expresar lo que las palabras no pueden decir",
-    color: "text-fucsia"
-  },
-  {
-    text: "Cada nota es un pedazo de mi alma",
+    text: "Que show mi people",
     color: "text-morado"
   },
   {
-    text: "La música urbana es mi voz, mi identidad",
+    text: "Nice 👌",
     color: "text-verde"
   },
   {
-    text: "El ritmo es el latido de la calle",
+    text: "Ya tu sabe",
     color: "text-amarillo"
   }
 ];
