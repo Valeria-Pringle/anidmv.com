@@ -17,7 +17,7 @@ export function Biography() {
         >
           <div className="relative w-full h-[550px] rounded-lg overflow-hidden">
             <Image
-              src="/images/anid_mv.jpeg"
+              src="/images/anid_mv.JPEG"
               alt="Anid_MV"
               fill
               className="object-contain"
