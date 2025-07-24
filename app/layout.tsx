@@ -20,17 +20,14 @@ const bebasNeue = Bebas_Neue({
   weight: ['400'],
 })
 
-export const viewport = {
-  themeColor: '#9C27B0',
-  width: 'device-width',
-  initialScale: 1,
-  maximumScale: 1,
-  userScalable: false,
-  // viewportFit is not a standard viewport property in Next.js 13+
-  // It should be set in the viewport meta tag directly if needed
-}
-
 export const metadata: Metadata = {
+  themeColor: '#9C27B0',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+  },
   title: 'Anid MV | Official',
   description: 'Sitio oficial de Anid MV. Música, conciertos y lo último de su carrera musical.',
   manifest: '/manifest.json',
