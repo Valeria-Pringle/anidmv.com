@@ -25,7 +25,9 @@ export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
-  viewportFit: 'cover',
+  userScalable: false,
+  // viewportFit is not a standard viewport property in Next.js 13+
+  // It should be set in the viewport meta tag directly if needed
 }
 
 export const metadata: Metadata = {
